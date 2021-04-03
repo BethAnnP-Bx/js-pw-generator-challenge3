@@ -29,22 +29,36 @@ var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numEric = "0123456789";
 var symBols = "!$%&'()*+,-./:;<=>?@[]^_`{|}~";
-var uniquePw = "";
+var uniquePwlength = "";
 
 var validateLow;
 var validateUpp;
 var validateNum;
 var validateSym;
-var validateLen;
 
 // Directions Alerts and Prompts
 function generatePassword() {
-  var uniquePw = parseInt(
+  var uniquePwlength = parseInt(
     prompt(
       "Choose the length of your unique password. Input a number between 8-128 for number of characters."
     )
   );
 }
+
+//alert("Do enter a number between 8-128.");
+//alert("Your unique password will be this number of characters.");
+//prompt ("Do you want lowercase letters in your unique password?");
+//alert ("Your unique password will include lowercase letters.");
+//alert ("Your unique password will not include lowercase letters.");
+//prompt ("Do you want uppercase letters in your unique password?");
+//alert ("Your unique password will include uppercase letters.");
+//alert ("Your unique password will not include uppercase letters.");
+//prompt ("Do you want numbers in your unique password?");
+//alert ("Your unique password will include numbers.");
+//alert ("Your unique password will not include numbers.");
+//prompt ("Do you want special characters in your unique password?");
+//alert ("Your unique password will include special characters.)";
+//alert (("Your unique password will include special characters.)";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
