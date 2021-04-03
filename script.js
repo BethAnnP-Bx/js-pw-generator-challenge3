@@ -24,6 +24,28 @@
 
 // Assignment code here
 
+// PW Criteria
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numEric = "0123456789";
+var symBols = "!$%&'()*+,-./:;<=>?@[]^_`{|}~";
+var uniquePw = "";
+
+var validateLow;
+var validateUpp;
+var validateNum;
+var validateSym;
+var validateLen;
+
+// Directions Alerts and Prompts
+function generatePassword() {
+  var uniquePw = parseInt(
+    prompt(
+      "Choose the length of your unique password. Input a number between 8-128 for number of characters."
+    )
+  );
+}
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
