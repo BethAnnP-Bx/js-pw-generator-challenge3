@@ -35,7 +35,7 @@ var numEric =  "1234567890";
 
 var symBols = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
-var uniquePwlength = "";
+//
 var genPwset = "";
 var uniquePwset = "";
 
@@ -52,49 +52,49 @@ function generatePassword() {
     "Choose the length of your unique password. Input a number between 8-128 for number of characters.")
   );
 
-If (uniquePwlength >=8 && uniquePwlength <=128); {
-  var validateLow = confirm(
-   "Do you want lowercase letters in your unique password?");
+// If (uniquePwlength >=8 && uniquePwlength <=128); {
+//   var validateLow = confirm(
+//    "Do you want lowercase letters in your unique password?");
   
-  var validateUpp = confirm(
-   "Do you want uppercase letters in your unique password?");
+//   var validateUpp = confirm(
+//    "Do you want uppercase letters in your unique password?");
 
-  var validateNum = confirm(
-    "Do you want numbers in your unique password?");
+//   var validateNum = confirm(
+//     "Do you want numbers in your unique password?");
   
-  var validateSym = confirm(
-    "Do you want symbols in your unique password?");
+//   var validateSym = confirm(
+//     "Do you want symbols in your unique password?");
 
-  console.log(validateLow);
-  console.log(validateUpp);
-  console.log(validateNum);
-  console.log(validateSym);
+//   console.log(validateLow);
+//   console.log(validateUpp);
+//   console.log(validateNum);
+//   console.log(validateSym);
 
-If (validateLow === true); {
-  uniquePwset = uniquePwset + validateLow;
-} 
-If (validateUpp === true); {
-  uniquePwset = uniquePwset + validateUpp;
-} 
-If (validateNum === true); {
-  uniquePwset = uniquePwset + validateNum;
-} 
-If (validateSym === true); {
-  uniquePwset = uniquePwset + validateSym;
-} 
-console.log(uniquePwset);
+// If (validateLow === true); {
+//   uniquePwset = uniquePwset + validateLow;
+// } 
+// If (validateUpp === true); {
+//   uniquePwset = uniquePwset + validateUpp;
+// } 
+// If (validateNum === true); {
+//   uniquePwset = uniquePwset + validateNum;
+// } 
+// If (validateSym === true); {
+//   uniquePwset = uniquePwset + validateSym;
+// } 
+// console.log(uniquePwset);
 
-for (var i = 0; i < uniquePwlength; i++) {
-  var value = Math.floor(Math.random() * uniquePwset.length);
-  uniquePwset = uniquePwset + uniquePwset[value];
-}
+// for (var i = 0; i < uniquePwlength; i++) {
+//   var value = Math.floor(Math.random() * uniquePwset.length);
+//   uniquePwset = uniquePwset + uniquePwset[value];
+// }
 
-return uniquePwset
+// return uniquePwset
 
-} else {
-  alert("Do enter a number between 8-128.");
- writePassword();
-}
+// } else {
+//   alert("Do enter a number between 8-128.");
+//  writePassword();
+// }
 
 
 // //var validateLow;
