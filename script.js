@@ -23,6 +23,8 @@
 // Pseudo-code ends here
 
 // Assignment code here
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
 // PW Criteria
 var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -33,35 +35,56 @@ var numEric =  "1234567890";
 
 var symBols = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
-var uniquePwlength = "";
+//var uniquePwlength = "";
 var genPwset = "";
 var uniquePwset = "";
 
-var validateLow;
-var validateUpp;
-var validateNum;
-var validateSym;
+// //var validateLow;
+// var validateUpp;
+// var validateNum;
+// var validateSym;
 //var validateLength - will add when not a MVP
 
 // Directions and functions with alerts and prompts
 function generatePassword() {
-  var uniquePwlength = 
+  var uniquePwlength = parseInt(
     prompt(
     "Choose the length of your unique password. Input a number between 8-128 for number of characters."
+  )
   );
- }
 
-function genLower() {
-  var pickLowercase = lowerCase.charAt(Math.floor(Math.random() *  );
-  document.getElementById("password").innerHTML = pickLowercase;
-}
+If (uniquePwlength >=8 && uniquePwlength <=128); {
+  var validateLow = confirm(
+   "Do you want lowercase letters in your unique password?");
+  
+  var validateUpp = confirm(
+   "Do you want uppercase letters in your unique password?");
 
-function genUpper() {}
+  var validateNum = confirm(
+       "Do you want uppercase letters in your unique password?");
+  
+  var validateSym = confirm(
+    "Do you want uppercase letters in your unique password?");
 
-function genNumeric() {}
+  console.log(validateLow);
+  console.log(validateUpp);
+  console.log(validateNum);
+  console.log(validateSym);
 
-function genSymbol() {}
-Math.floor(Math.random);
+// //var validateLow;
+
+// var validateNum;
+//    {
+//   //var pickLowercase = lowerCase.charAt(Math.floor(Math.random() *  );
+//   document.getElementById("password").innerHTML = pickLowercase;
+// //}
+
+// function genUpper() {}
+
+// function genNumeric() {}
+
+// function genSymbol() {}
+// Math.floor(Math.random);
 
 //if (uniquePwlength < 8) {
 //  alert("Do enter a number between 8-128.");
@@ -90,8 +113,7 @@ Math.floor(Math.random);
 //alert ("Your unique password will include special characters.)";
 //alert (("Your unique password will include special characters.)";
 
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+
 
 // Write password to the #password input
 function writePassword() {
