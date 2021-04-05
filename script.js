@@ -84,16 +84,22 @@ var upperCase = [
 ];
 var numEric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symBols = ["!", "&", "%", "@", "*", "+", "-", ".", "/", "<", ">", "?", "~"];
+
 var uniquePwlength = "";
+var genPwset = "";
+var uniquePwset = "";
 
 var validateLow;
 var validateUpp;
 var validateNum;
 var validateSym;
-var validateLength;
+//var validateLength - will add when not a MVP
 
 // Directions and functions with alerts and prompts
-function genLower() {}
+function genLower() {
+  var pickLowercase = lowerCase.charAt(Math.floor(Math.random() * );
+  document.getElementById("password").innerHTML = pickLowercase;
+}
 
 function genUpper() {}
 
