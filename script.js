@@ -22,46 +22,103 @@
 // Use for loop, Math.floor, Math.random
 // Pseudo-code ends here
 
-// Assignment code here
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-
+// Assignment Code here
 // PW Criteria
-var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+var lowerCase = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "v",
+  "w",
+  "x",
+  "y",
+  "z",
+];
 
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var upperCase = [
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+];
 
-var numEric =  "1234567890";
+var numEric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-var symBols = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+var symBols = ["!", "&", "%", "@", "*", "+", "-", ".", "/", "<", ">", "?", "~"];
 
-//
+var uniquePwlength = "";
 var genPwset = "";
 var uniquePwset = "";
 
-// //var validateLow;
-// var validateUpp;
-// var validateNum;
-// var validateSym;
-//var validateLength - will add when not a MVP
+var validateLow;
+var validateUpp;
+var validateNum;
+var validateSym;
+var validateLength = "";
 
 // Directions and functions with alerts and prompts
 function generatePassword() {
-  var uniquePwlength = parseInt(
-    prompt(
-    "Choose the length of your unique password. Input a number between 8-128 for number of characters.")
+  var validateLength = prompt(
+    "Choose the length of your unique password. Input a number between 8-128 for number of characters."
   );
+}
+if (uniquePwlength >=8 && validatelength <=128){}
+else {alert("Do enter a number between 8-128.")}
 
-// If (uniquePwlength >=8 && uniquePwlength <=128); {
-//   var validateLow = confirm(
-//    "Do you want lowercase letters in your unique password?");
-  
+function uniquePwset() {
+var validateLow = confirm(
+"Do you want lowercase letters in your unique password?"
+
+
+//; {
+//");
+
 //   var validateUpp = confirm(
 //    "Do you want uppercase letters in your unique password?");
 
 //   var validateNum = confirm(
 //     "Do you want numbers in your unique password?");
-  
+
 //   var validateSym = confirm(
 //     "Do you want symbols in your unique password?");
 
@@ -72,16 +129,16 @@ function generatePassword() {
 
 // If (validateLow === true); {
 //   uniquePwset = uniquePwset + validateLow;
-// } 
+// }
 // If (validateUpp === true); {
 //   uniquePwset = uniquePwset + validateUpp;
-// } 
+// }
 // If (validateNum === true); {
 //   uniquePwset = uniquePwset + validateNum;
-// } 
+// }
 // If (validateSym === true); {
 //   uniquePwset = uniquePwset + validateSym;
-// } 
+// }
 // console.log(uniquePwset);
 
 // for (var i = 0; i < uniquePwlength; i++) {
@@ -95,7 +152,6 @@ function generatePassword() {
 //   alert("Do enter a number between 8-128.");
 //  writePassword();
 // }
-
 
 // //var validateLow;
 
@@ -139,7 +195,8 @@ function generatePassword() {
 //alert ("Your unique password will include special characters.)";
 //alert (("Your unique password will include special characters.)";
 
-
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
