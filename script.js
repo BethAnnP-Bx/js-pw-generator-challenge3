@@ -35,7 +35,7 @@ var numEric =  "1234567890";
 
 var symBols = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
-//var uniquePwlength = "";
+var uniquePwlength = "";
 var genPwset = "";
 var uniquePwset = "";
 
@@ -49,8 +49,7 @@ var uniquePwset = "";
 function generatePassword() {
   var uniquePwlength = parseInt(
     prompt(
-    "Choose the length of your unique password. Input a number between 8-128 for number of characters."
-  )
+    "Choose the length of your unique password. Input a number between 8-128 for number of characters.")
   );
 
 If (uniquePwlength >=8 && uniquePwlength <=128); {
@@ -61,15 +60,42 @@ If (uniquePwlength >=8 && uniquePwlength <=128); {
    "Do you want uppercase letters in your unique password?");
 
   var validateNum = confirm(
-       "Do you want uppercase letters in your unique password?");
+    "Do you want numbers in your unique password?");
   
   var validateSym = confirm(
-    "Do you want uppercase letters in your unique password?");
+    "Do you want symbols in your unique password?");
 
   console.log(validateLow);
   console.log(validateUpp);
   console.log(validateNum);
   console.log(validateSym);
+
+If (validateLow === true); {
+  uniquePwset = uniquePwset + validateLow;
+} 
+If (validateUpp === true); {
+  uniquePwset = uniquePwset + validateUpp;
+} 
+If (validateNum === true); {
+  uniquePwset = uniquePwset + validateNum;
+} 
+If (validateSym === true); {
+  uniquePwset = uniquePwset + validateSym;
+} 
+console.log(uniquePwset);
+
+for (var i = 0; i < uniquePwlength; i++) {
+  var value = Math.floor(Math.random() * uniquePwset.length);
+  uniquePwset = uniquePwset + uniquePwset[value];
+}
+
+return uniquePwset
+
+} else {
+  alert("Do enter a number between 8-128.");
+ writePassword();
+}
+
 
 // //var validateLow;
 
