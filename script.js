@@ -86,9 +86,9 @@ var numEric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
 var symBols = ["!", "&", "%", "@", "*", "+", "-", ".", "/", "<", ">", "?", "~"];
 
-var uniquePwlength = "";
-var genPwset = "";
-var uniquePwset = "";
+//var uniquePwlength = "";
+//var genPwset = "";
+//var uniquePwset = "";
 
 var validateLow;
 var validateUpp;
@@ -101,14 +101,20 @@ function generatePassword() {
   var validateLength = prompt(
     "Choose the length of your unique password. Input a number between 8-128 for number of characters."
   );
+
+while (validateLength <= 7 && validateLength >= 128) {
+  alert("Do enter a number between 8-128.");
+  var validateLength = (prompt(
+    "Choose the length of your unique password. Input a number between 8-128 for number of characters."
+  ));
 }
-if (uniquePwlength >=8 && validatelength <=128){}
-else {alert("Do enter a number between 8-128.")}
 
-function uniquePwset() {
-var validateLow = confirm(
-"Do you want lowercase letters in your unique password?"
-
+for (var i = 0; i < validateLength; i++) {
+  genPwset = genPwset + 
+}
+//function uniquePwset() {
+//var validateLow = confirm(
+//"Do you want lowercase letters in your unique password?"
 
 //; {
 //");
