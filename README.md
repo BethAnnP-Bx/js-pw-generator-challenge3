@@ -1,11 +1,14 @@
 # Password Generator Challenge 3: Javascript
 
-Created an application that generates a random password based on user-selected criteria.
+Attempted to create an application that generates a random password based on user-selected criteria.
 
 - This app runs in the browser and features dynamically updated HTML and CSS powered by JavaScript code.
 - It features a clean and polished user interface is responsive, ensuring that it adapts to multiple screen sizes.
 
 ## Deployed URL and Repo URL:
+
+- https://bethannp-bx.github.io/js-pw-generator-challenge3/
+- https://github.com/BethAnnP-Bx/js-pw-generator-challenge3
 
 ## User Story
 
@@ -36,3 +39,9 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 ## Screenshot
+
+![Screenshot of Module 3 Javascript Password Generator](./images/Screenshotjspwgen.jpg)
+
+## Notes to the grader
+
+I did not succeed with this challenge. I do understand the concepts and had researched, but did not produce a MVP. It is mostly pseudo-code.
