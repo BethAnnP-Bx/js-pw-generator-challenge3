@@ -101,17 +101,17 @@ function generatePassword() {
   var validateLength = prompt(
     "Choose the length of your unique password. Input a number between 8-128 for number of characters."
   );
-
-  //while (validateLength <= 7 && validateLength >= 128) {
-  //alert("Do enter a number between 8-128.");
-  //var validateLength = (prompt(
-  //  "Choose the length of your unique password. Input a number between 8-128 for number of characters."
-  //  ));
-  //}
-
-  //for (var i = 0; i < validateLength; i++) {
-  //genPwset = genPwset +
 }
+//while (validateLength <= 7 && validateLength >= 128) {
+//alert("Do enter a number between 8-128.");
+//var validateLength = (prompt(
+//  "Choose the length of your unique password. Input a number between 8-128 for number of characters."
+//  ));
+//}
+
+//for (var i = 0; i < validateLength; i++) {
+//genPwset = genPwset +
+
 //function uniquePwset() {
 //var validateLow = confirm(
 //"Do you want lowercase letters in your unique password?"
