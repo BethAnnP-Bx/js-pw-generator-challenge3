@@ -102,15 +102,15 @@ function generatePassword() {
     "Choose the length of your unique password. Input a number between 8-128 for number of characters."
   );
 
-while (validateLength <= 7 && validateLength >= 128) {
-  alert("Do enter a number between 8-128.");
-  var validateLength = (prompt(
-    "Choose the length of your unique password. Input a number between 8-128 for number of characters."
-  ));
-}
+  //while (validateLength <= 7 && validateLength >= 128) {
+  //alert("Do enter a number between 8-128.");
+  //var validateLength = (prompt(
+  //  "Choose the length of your unique password. Input a number between 8-128 for number of characters."
+  //  ));
+  //}
 
-for (var i = 0; i < validateLength; i++) {
-  genPwset = genPwset + 
+  //for (var i = 0; i < validateLength; i++) {
+  //genPwset = genPwset +
 }
 //function uniquePwset() {
 //var validateLow = confirm(
