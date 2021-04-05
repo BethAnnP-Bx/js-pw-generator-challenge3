@@ -25,65 +25,13 @@
 // Assignment code here
 
 // PW Criteria
-var lowerCase = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+var lowerCase = "abcdefghijklmnopqrstuvwxyz";
 
-var upperCase = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
-var numEric = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-var symBols = ["!", "&", "%", "@", "*", "+", "-", ".", "/", "<", ">", "?", "~"];
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+var numEric =  "1234567890";
+
+var symBols = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
 
 var uniquePwlength = "";
 var genPwset = "";
@@ -96,8 +44,15 @@ var validateSym;
 //var validateLength - will add when not a MVP
 
 // Directions and functions with alerts and prompts
+function generatePassword() {
+  var uniquePwlength = 
+    prompt(
+    "Choose the length of your unique password. Input a number between 8-128 for number of characters."
+  );
+ }
+
 function genLower() {
-  var pickLowercase = lowerCase.charAt(Math.floor(Math.random() * );
+  var pickLowercase = lowerCase.charAt(Math.floor(Math.random() *  );
   document.getElementById("password").innerHTML = pickLowercase;
 }
 
@@ -106,12 +61,6 @@ function genUpper() {}
 function genNumeric() {}
 
 function genSymbol() {}
-
-function generatePassword() {
-  var uniquePwlength = prompt(
-    "Choose the length of your unique password. Input a number between 8-128 for number of characters."
-  );
-}
 Math.floor(Math.random);
 
 //if (uniquePwlength < 8) {
